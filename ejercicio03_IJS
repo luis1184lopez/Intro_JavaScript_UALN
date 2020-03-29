@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+  <head>
+    <title>index</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+<script type="text/javascript">
+var meses = ["Enero", " Febrero", " Marzo", " Abril", " Mayo", " Junio",'\n'," Julio", " Agosto"," Septiembre"," Octubre"," Noviembre"," Diciembre"];
+alert(meses);
+
+</script>
+  </body>
+</html>
