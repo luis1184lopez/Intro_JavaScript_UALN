@@ -1,0 +1,15 @@
+<<!DOCTYPE html>
+  <head>
+    <title>index</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+<script type="text/javascript">
+var mensaje = alert('Hola Mundo! \n Que fáicl es inlcuir \'comillas simples\' \n y comillas dobles  \"comillas dobles\"');
+
+</script>
+  </body>
+</html>
