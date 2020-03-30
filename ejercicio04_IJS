@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+  <head>
+    <title>index</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+<script type="text/javascript">
+var valores = [true, 5, false, "hola", "adios", 2];
+alert(valores);
+if (valores[3].length>valores[4].length){
+    alert('Es mayor', valores[3]);
+}else 
+alert('Es mayor',valores[4]);
+alert(meses);
+
+</script>
+  </body>
+</html>
