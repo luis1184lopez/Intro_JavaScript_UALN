@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function edadcanina(edad){
+            
+            var edadreal= parseInt(edad,10) + 7;
+            alert("La edad  real de la mascota es " + edadreal);
+        }
+       do{
+        var edadmascota= prompt("Ingrese la edad de su mascota");
+        if (edadmascota<0) {
+            alert('Edad no valida, ingrese una edad mayor a 0');
+            break;
+        }
+        if(isNaN(edadmascota)) {
+            alert('Edad no valida, ingrese una edad numerica no en letras');
+            break;
+        }
+        edadcanina(edadmascota);
+       }while(i=1);
+
+
+    </script>
+</body>
+</html>
