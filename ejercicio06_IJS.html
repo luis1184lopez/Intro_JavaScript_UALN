@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+  <head>
+    <title>index</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+<script type="text/javascript">
+    var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+
+		var numeroDNI = prompt("Por favor, ingresá tu número de DNI (sin la letra)");
+		var letra = prompt("Por favor, ingresá la letra de tu DNI");
+
+		letra = letra.toUpperCase();
+
+		if(numeroDNI < 0 || numeroDNI > 99999999) {
+		  alert("El número ingresado NO es válido");
+		}
+		else {
+		  var numero_calculo = numeroDNI % 23;
+		  var letraDNI = letras[numero_calculo];
+		 
+		  if(letraDNI != letra) {
+		    alert("La letra o el número proporcionados no son correctos");
+		  }
+		  else {
+		    alert("El número de DNI y su letra son correctos");
+		  }
+		}
+
+</script>
+</body>
+</html>
