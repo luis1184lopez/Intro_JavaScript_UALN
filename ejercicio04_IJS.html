@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+  <head>
+    <title>index</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+<script type="text/javascript">
+var valores = [true, 5, false, "hola", "adios", 2];
+// Cual de los 2 elementos de textos es mayor
+		alert("El primer texto es el mayor de los 2 textos de la variable \'valores\' = " + (valores[3] > valores[4]));
+
+		// Combinar los 2 valores booleanos para dar true
+		alert("Los 2 valores boolenados combinandos con || dan = " + (valores[0] || valores[2]));
+
+		// Combinar los 2 valores booleanos para dar false
+		alert("Los 2 valores boolenados combinandos con && dan = " + (valores[0] && valores[2]));
+
+		// Resultado de la SUMA con los valores numéricos de la variable valores
+		var suma = valores[1] + valores[5];
+		alert("La Suma de los valores númericos de la variable \'valores\' es " + suma );
+
+		// Resultado de la RESTA con los valores numéricos de la variable valores
+		var resta = valores[1] - valores[5];
+		alert("La Resta de los valores númericos de la variable \'valores\' es " + resta );
+
+		// Resultado de la MULTIPLICACION con los valores numéricos de la variable valores
+		var multiplicacion = valores[1] * valores[5];
+		alert("La Multiplicación de los valores númericos de la variable \'valores\' es " + multiplicacion );
+
+		// Resultado del MODULO con los valores numéricos de la variable valores
+		var modulo = valores[1] % valores[5];
+		alert("El modulo (resto de la división entera de 2 números) de los valores númericos de la variable \'valores\' es " + modulo );
+
+</script>
+  </body>
+</html>
