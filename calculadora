@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Calculadora</title>
+	<style>
+		label{
+			width:300px;
+			display:block;
+		}
+		form{
+			position:relative;
+		}
+		form input[type='text']{
+			text-align:right;
+		}
+		.operaciones{
+			position:absolute;
+			left:230px;
+			top:0px;
+			width:120px;			
+		}
+		.operaciones input[type='button']{
+			width:60px;
+			display:block;
+			float:left;
+		}
+	</style>
+</head>
+<body>
+<header id="page_header">
+  <h1>Calculadora</h1>  
+</header>
+	<section>
+		<article class="form">
+			<form>
+				<div class="controls">
+				<label>Operando 1
+				<input type="text" value="" id="operando1" size="5"/>
+				</label>
+				<label>Operandor -->
+					<input type="text" value="" id="operador" size="5" />
+					</label>
+				<label>Operando 2
+				<input type="text" value="" id="operando2" size="5"/>
+				</label>
+				</div>
+				<div class="operaciones">
+					<input type="button" value="+" id="suma" onclick="sumar()"/>
+					<input type="button" value="-" id="resta" onclick="restar()"/>
+					<input type="button" value="/" id="divide" onclick="dividir()"/>
+					<input type="button" value="x" id="multiplica" onclick="multiplicar()" />
+					<input type="button" value="=" id="igual" onclick="capturar()" />
+					<input type="button" value="C" id="limpia" onclick="limpiar()" />
+					
+				</div>
+			</form>
+			<footer>
+				<div id="resultado">
+					<h3>Resultado</h3>
+					<p id="calculofinal">Aqui va el resultado...</p>
+				</div>
+			</footer>
+		</article>		
+	</section>
+<footer id="page_footer">
+	<p>Derechos de autor 2018</p>
+</footer>
+<script>
+		function sumar(){
+		var suma = document.getElementById('suma').value;
+		document.getElementById('operador').value= suma;
+		}
+		function restar(){
+		var resta = document.getElementById('resta').value;
+		document.getElementById('operador').value= resta;
+		}
+		function dividir(){
+		var dividir = document.getElementById('divide').value;
+		document.getElementById('operador').value= dividir;
+		}
+		function multiplicar(){
+		var multiplicar = document.getElementById('multiplica').value;
+		document.getElementById('operador').value= multiplicar;
+		}
+		function limpiar(){
+		document.getElementById('operando1').value= "";
+		document.getElementById('operador').value= "";
+		document.getElementById('operando2').value= "";
+		document.getElementById('calculofinal').innerHTML="";
+		}
+		function capturar(){
+			
+		operando1= parseInt(document.getElementById('operando1').value);
+		
+		operador= document.getElementById('operador').value;
+		
+		operando2= parseInt(document.getElementById('operando2').value);
+	
+		if (operador == "+"){
+			operacionsuma = operando1 + operando2;
+			document.getElementById('calculofinal').innerHTML= operacionsuma;
+		}
+		if (operador == "-"){
+			operacionresta = operando1 - operando2;
+			document.getElementById('calculofinal').innerHTML= operacionresta;
+		}
+		if (operador == "x"){
+			operacionmult = operando1 * operando2;
+			document.getElementById('calculofinal').innerHTML= operacionmult;
+		}
+		if (operador == "/"){
+			operaciondiv = operando1 / operando2;
+			document.getElementById('calculofinal').innerHTML= operaciondiv;
+		}	
+	}
+
+</script>
+</body>
+</html>
